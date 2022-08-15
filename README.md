@@ -1,1 +1,1 @@
-# sample
+# sample flask skeleton folder tree
