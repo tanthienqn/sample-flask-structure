@@ -3,14 +3,14 @@ def FAILED_STAGE
 pipeline {
     agent {
         node {
-            label 'kv3-linux-1'
+            label 'linux-1'
         }
     }
     environment {
         ENV_VERSION = '1.0.2'
         WEBHOOK_URL = ''
         USERID= '-'
-        SERVICE_NAME= 'template-service'
+        SERVICE_NAME= 'sample-service'
     }
 
     stages {
