@@ -116,7 +116,7 @@ pipeline {
             }
             }
 
-        stage('Deployment econtract-dev  template branch develop') {
+        stage('Deployment sample-dev branch develop') {
             when {
             	branch 'develop'
             }

@@ -30,7 +30,7 @@ services:
         aliases:
         - mongodb-server
 
-  econtractapp:
+  sampletapp:
     image:
     restart: always
     deploy:
@@ -47,4 +47,4 @@ services:
     networks:
        mongo-network:
         aliases:
-        - econtractapp
+        -   sampletapp
