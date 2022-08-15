@@ -1,12 +1,12 @@
 from server.constants.FormatReturn import TypeReturn
 
-class HandleSuccess:
 
+class HandleSuccess:
     __output = {
-            "message": "ECT-00000000",
-            "status": "OK",
-            "statusCode": 200
-        }
+        "message": "ECT-00000000",
+        "status": "OK",
+        "statusCode": 200
+    }
     __page = 1
     __maxSize = 1000
     __sort = 1
@@ -31,7 +31,7 @@ class HandleSuccess:
     @classmethod
     def __return_single_model(cls, models):
         data = models.output()
-        cls.__output.update({"object":data})
+        cls.__output.update({"object": data})
         return cls.__output
 
     @classmethod
@@ -63,5 +63,5 @@ class HandleSuccess:
         elif code_format == TypeReturn.SINGLE:
             return cls.__return_single_model(data)
         elif code_format == TypeReturn.PAGINATION:
-            return  cls.__return_pagination_model(data)
+            return cls.__return_pagination_model(data)
         return cls.__return_default()

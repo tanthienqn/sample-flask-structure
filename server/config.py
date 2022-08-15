@@ -7,6 +7,7 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAza7n18GVgt5akP9mw845Ng0lEril4tdUncig
 -----END PUBLIC KEY-----
 """
 
+
 class BaseConfig(object):
     """Base configuration."""
     # Flask BCRYPT setting
@@ -42,6 +43,7 @@ class BaseConfig(object):
     MINIO_HTTP_CLIENT = os.getenv('MINIO_HTTP_CLIENT', None)
     MINIO_BUCKET = os.getenv('MINIO_BUCKET', 'develop')
 
+
 class DevelopmentConfig(BaseConfig):
     """Development configuration."""
     DEBUG = True,
@@ -52,12 +54,14 @@ class ProductionConfig(BaseConfig):
     """Production configuration."""
     DEBUG = False
 
+
 class TestingConfig(BaseConfig):
     """Testing configuration."""
     DEBUG = True
     TESTING = True
     WTF_CSRF_ENABLED = False
     BCRYPT_LOG_ROUNDS = 4
+
 
 app_config = {
     'development': DevelopmentConfig,
