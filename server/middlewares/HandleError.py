@@ -1,12 +1,10 @@
-from flask import app, jsonify
-from werkzeug.exceptions import HTTPException
+from flask import jsonify
 from server.utils import ErrorMessage
 
 
-@app.errorhandler(HTTPException)
 def handle_exception(error_return):
-    code = error_return
-    message = ErrorMessage.errorMessage.get(error_return, None)
+    code = str(error_return)
+    message = ErrorMessage.errorMessage.get(code, None)
     if message is None:
         code = "NOT_DEFINE"
         message = "ECT-00000400"
