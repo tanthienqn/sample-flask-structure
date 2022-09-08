@@ -1,12 +1,8 @@
-from server.middlewares import HandleSuccess
-from flask import jsonify
+from server.services.BaseService import BaseService
 
 
-def hello():
-    return "hello"
+class SampleService(BaseService):
 
-
-def build_output(msg, format_return):
-    handle_success = HandleSuccess.HandleSuccess()
-    output = handle_success._build_output(format_return, msg)
-    return jsonify(output)
+    @classmethod
+    def hello(cls):
+        return "hello"

@@ -10,6 +10,7 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAza7n18GVgt5akP9mw845Ng0lEril4tdUncig
 
 class BaseConfig(object):
     """Base configuration."""
+    SERVICE_NAME = os.getenv('SERVICE_NAME', 'sample-service')
     # Flask BCRYPT setting
     SECRET_KEY = os.getenv('BCRYPT_SECRET_KEY', '94722952-64cf-4729-a78a-3e6ffd5ae210')
     BCRYPT_LOG_ROUNDS = 13
@@ -26,16 +27,14 @@ class BaseConfig(object):
     PERMANENT_SESSION_LIFETIME = timedelta(minutes=1)
     UPLOAD_FOLDER = os.getenv('UPLOAD_FOLDER', '/tmp')
     # config mongodb
-    MONGO_SERVER = os.getenv('MONGO_SERVER', '0.0.0.0')
-    MONGO_PORT = os.getenv('MONGO_PORT', '27017')
-    MONGO_USER = os.getenv('MONGO_USER', 'admin')
-    MONGO_PASSWORD = os.getenv('MONGO_PASSWORD', 'admin')
-    MONGO_DATABASE = os.getenv('MONGO_DATABASE', 'user')
-    MONGODB_HOST = "mongodb://" + MONGO_USER + ":" + MONGO_PASSWORD + "@" + MONGO_SERVER + ":" + MONGO_PORT + "/" + MONGO_DATABASE
+    MONGODB_SETTINGS = {
+        'db': os.getenv('MONGO_DATABASE', 'vqc-dev'),
+        'host': os.getenv('MONGO_URI', 'mongodb://admin:admin@127.0.0.1:2017/dev?replicaSet=rs')
+    }
     # config minio
     MINIO_ENDPOINT = os.getenv('MINIO_ENDPOINT', '0.0.0.0:9007')
-    MINIO_ACCESS_KEY = os.getenv('MINIO_ACCESS_KEY', 'WEZXSFOXA7ZCMPLE')
-    MINIO_SECRET_KEY = os.getenv('MINIO_SECRET_KEY', 'SDADDtnFEMI/KSDDSG/bPxRfidsTESTING')
+    MINIO_ACCESS_KEY = os.getenv('MINIO_ACCESS_KEY', 'TESTING')
+    MINIO_SECRET_KEY = os.getenv('MINIO_SECRET_KEY', 'TESTING')
     MINIO_SECURE = True
     if os.getenv('MINIO_SECURE', 'False') == 'False':
         MINIO_SECURE = False
