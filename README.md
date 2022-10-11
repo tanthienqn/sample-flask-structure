@@ -1,20 +1,4 @@
-Setup flow run at local
 
-Some rule flow before push commit
-
-`install pre-commit: pip install pre-commit`
-
-`pre-commit install`
-
-push code if allow all rule
-
-1. Download folder resources
-
-2. Build Docker images: `docker build -t stt:1.0 .`
-
-If you want to change core images, use docker-build-core
-
-3. Run docker images: `docker run -p 5000:5000 -it stt:1.0`
 
 Infrastrure folder:
 ```
