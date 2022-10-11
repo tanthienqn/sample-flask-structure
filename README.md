@@ -12,10 +12,10 @@ Infrastrure folder:
 │   │   ├── ErrorMessage.py 	store error code to handle error
 │   ├── utils					        store functions that are used many times
 │   ├── controllers 			    store controller layer
-│   │   ├── VQCcontroller.py  store route API for business VQC
+│   │   ├── controller.py  store route API for business
 │   ├── services 				      store service layer
 │   │   ├── BaseService.py    base service
-│   │   ├── VQCService.py     store fuctions for business VQC
+│   │   ├── Service.py     store fuctions for business
 │   ├── models 					      store model layer
 │   ├── middlewares 			    store middleware layer
 │   │   ├── Authority.py 		  store functions to check authen
