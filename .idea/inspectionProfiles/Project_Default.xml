@@ -1,0 +1,82 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AngularMissingEventHandler" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="CssUnknownTarget" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="51" name="JavaScript" />
+        <language minSize="81" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="JSAnnotator" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <value>
+          <list size="35">
+            <item index="0" class="java.lang.String" itemvalue="flask-mongoengine" />
+            <item index="1" class="java.lang.String" itemvalue="py-healthcheck" />
+            <item index="2" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="3" class="java.lang.String" itemvalue="pre-commit" />
+            <item index="4" class="java.lang.String" itemvalue="minio" />
+            <item index="5" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="6" class="java.lang.String" itemvalue="requests" />
+            <item index="7" class="java.lang.String" itemvalue="importlib-metadata" />
+            <item index="8" class="java.lang.String" itemvalue="mongoengine" />
+            <item index="9" class="java.lang.String" itemvalue="Flask-Minio" />
+            <item index="10" class="java.lang.String" itemvalue="filelock" />
+            <item index="11" class="java.lang.String" itemvalue="zipp" />
+            <item index="12" class="java.lang.String" itemvalue="certifi" />
+            <item index="13" class="java.lang.String" itemvalue="Flask-JWT-Extended" />
+            <item index="14" class="java.lang.String" itemvalue="urllib3" />
+            <item index="15" class="java.lang.String" itemvalue="itsdangerous" />
+            <item index="16" class="java.lang.String" itemvalue="Flask" />
+            <item index="17" class="java.lang.String" itemvalue="email-validator" />
+            <item index="18" class="java.lang.String" itemvalue="dnspython" />
+            <item index="19" class="java.lang.String" itemvalue="nodeenv" />
+            <item index="20" class="java.lang.String" itemvalue="pymongo" />
+            <item index="21" class="java.lang.String" itemvalue="Flask-Cors" />
+            <item index="22" class="java.lang.String" itemvalue="identify" />
+            <item index="23" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="24" class="java.lang.String" itemvalue="Flask-WTF" />
+            <item index="25" class="java.lang.String" itemvalue="gunicorn" />
+            <item index="26" class="java.lang.String" itemvalue="toml" />
+            <item index="27" class="java.lang.String" itemvalue="click" />
+            <item index="28" class="java.lang.String" itemvalue="WTForms" />
+            <item index="29" class="java.lang.String" itemvalue="platformdirs" />
+            <item index="30" class="java.lang.String" itemvalue="install" />
+            <item index="31" class="java.lang.String" itemvalue="virtualenv" />
+            <item index="32" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="33" class="java.lang.String" itemvalue="distlib" />
+            <item index="34" class="java.lang.String" itemvalue="cfgv" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N806" />
+          <option value="N802" />
+          <option value="N803" />
+          <option value="N813" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="speech_recognition.w2l_decoder" />
+          <option value="aiohttp.streams.StreamReader.__await__" />
+          <option value="list.cancel" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SqlMissingReturnInspection" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="SyntaxError" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="TsLint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnresolvedReference" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+  </profile>
+</component>

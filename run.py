@@ -7,3 +7,6 @@ if __name__ == '__main__':
     port_env = os.getenv('PORT_NAME', '5000')
     app = create_app(env_name)
     app.run(host=host_env, threaded=True, port=port_env, debug=app.config['DEBUG'], use_reloader=False)
+
+else:
+    gunicorn_app = create_app(os.getenv("SERVER_ENV", "development"))
